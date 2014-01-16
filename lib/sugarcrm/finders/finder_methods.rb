@@ -1,6 +1,5 @@
 module SugarCRM; module FinderMethods
   module ClassMethods
-    private 
       def find_initial(options)
         options.update(:limit => 1)
         result = find_by_sql(options)
